@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+* {
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container-box {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 300px;
+    background-color: #2f19e0;
+    top: 200px;
+    border-radius: 25px;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 5%), 0 6.7px 5.3px rgb(0 0 0 / 1%), 0 12.5px 10px rgb(0 0 0 / 1%), 0 22.3px 17.9px rgb(0 0 0 / 1%), 0 41.8px 33.4px rgb(0 0 0 / 5%), 0 100px 80px rgb(0 0 0 / 2%);
+    overflow: hidden;
+}
+.image-left {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    left: 0;
+    background-color: #fff;
+    background-image:url({{pet.photo}});
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.info-right {
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    padding-right: 30px;
+    height: 100%;
+    width: 64%;
+    right: -4px;
+    background-color: rgb(255, 133, 204);
+}
+.container-box h4 {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    top: -20px;
+    margin-left: 25px;
+    font-size: 29px;
+}
+.container-box p {
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    margin-left: 25px;
+    top: 54px;
+    width: 53%;
+}
+.contact {
+    position: absolute;
+    display: inline-block;
+    bottom: 29px;
+    margin-left: 25px;
+    color: #000;
+}
+.contact span {
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 15px 17px;
+    border-radius: 43px;
+}
+.contact .phone::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background-image: url(uploads/photos/phone.jpg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 5px;
+    margin-right: 8px;
+}
+    .contact .email::before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        background-image: url(uploads/photos/email.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 5px;
+        margin-right: 8px;
+} 
+.date {
+    position: absolute;
+    display: inline-block;
+    top: 7px;
+    color: rgb(255, 255, 255);
+    padding: 10px 17px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    right: 7px;
+}
+ 

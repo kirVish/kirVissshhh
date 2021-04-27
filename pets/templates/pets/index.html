@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Животные{% endblock %}
+{% block content %}
+Здесь будет список животных
+{% for Pet in a %}
+<div>{{Pet}}</div>
+{% endfor %}
+{% endblock %}
