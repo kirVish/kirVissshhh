@@ -4,6 +4,8 @@
 {% block content %}
 Здесь будет список животных
 {% for Pet in a %}
-<div>{{Pet}}</div>
+<li>
+    <a href="/pets/{{Pet.id}}">{{ Pet.date_posted }} - {{ Pet.name }} - {{ Pet.kind }}</a>
+</li>
 {% endfor %}
 {% endblock %}
